@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 22 Mar 2024 pada 03.22
+-- Waktu pembuatan: 02 Apr 2024 pada 03.36
 -- Versi server: 10.4.28-MariaDB
 -- Versi PHP: 8.2.4
 
@@ -64,7 +64,8 @@ CREATE TABLE `login` (
 --
 
 INSERT INTO `login` (`LoginID`, `Username`, `Password`, `HakAkses`) VALUES
-(1, 'fitria', '101223', 'Admin');
+(1, 'fitria', '101223', 'Admin'),
+(2, 'putri', '101222', 'Petugas');
 
 -- --------------------------------------------------------
 

@@ -218,6 +218,7 @@ String harga, idproduk, idprodukpenjualan, iddetail, jam, tanggal, sub_total;
         txtkembali = new javax.swing.JTextField();
         btnbayar = new javax.swing.JButton();
         btnbaru = new javax.swing.JButton();
+        btnkeluar = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -266,6 +267,18 @@ String harga, idproduk, idprodukpenjualan, iddetail, jam, tanggal, sub_total;
         btntambah.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btntambahActionPerformed(evt);
+            }
+        });
+
+        txtjam.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtjamActionPerformed(evt);
+            }
+        });
+
+        txttanggal.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txttanggalActionPerformed(evt);
             }
         });
 
@@ -318,6 +331,13 @@ String harga, idproduk, idprodukpenjualan, iddetail, jam, tanggal, sub_total;
         btnbaru.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnbaruActionPerformed(evt);
+            }
+        });
+
+        btnkeluar.setText("KELUAR");
+        btnkeluar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnkeluarActionPerformed(evt);
             }
         });
 
@@ -392,7 +412,9 @@ String harga, idproduk, idprodukpenjualan, iddetail, jam, tanggal, sub_total;
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(btnbayar)
                                 .addGap(26, 26, 26)))
-                        .addComponent(btnbaru)))
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(btnbaru)
+                            .addComponent(btnkeluar))))
                 .addContainerGap(744, Short.MAX_VALUE))
             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(layout.createSequentialGroup()
@@ -450,7 +472,9 @@ String harga, idproduk, idprodukpenjualan, iddetail, jam, tanggal, sub_total;
                                 .addGap(50, 50, 50))))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(21, 21, 21)
-                        .addComponent(btnhapus)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(btnhapus)
+                            .addComponent(btnkeluar))
                         .addGap(37, 37, 37)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(btnbaru)
@@ -574,6 +598,18 @@ total();
         // TODO add your handling code here:
     }//GEN-LAST:event_btnbaruActionPerformed
 
+    private void txtjamActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtjamActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtjamActionPerformed
+
+    private void txttanggalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txttanggalActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txttanggalActionPerformed
+
+    private void btnkeluarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnkeluarActionPerformed
+this.dispose();          // TODO add your handling code here:
+    }//GEN-LAST:event_btnkeluarActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -614,6 +650,7 @@ total();
     private javax.swing.JButton btnbayar;
     private javax.swing.JButton btncari;
     private javax.swing.JButton btnhapus;
+    private javax.swing.JButton btnkeluar;
     private javax.swing.JButton btntambah;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;

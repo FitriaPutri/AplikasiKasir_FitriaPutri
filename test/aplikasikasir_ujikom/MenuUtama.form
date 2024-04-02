@@ -197,7 +197,7 @@
             </MenuItem>
           </SubComponents>
         </Menu>
-        <Menu class="javax.swing.JMenu" name="jMenu1">
+        <Menu class="javax.swing.JMenu" name="help">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
               <Image iconType="2" name="C:\Users\user\Downloads\aiueo1.png"/>
@@ -205,13 +205,16 @@
             <Property name="text" type="java.lang.String" value="Help"/>
           </Properties>
           <SubComponents>
-            <MenuItem class="javax.swing.JMenuItem" name="jMenuItem1">
+            <MenuItem class="javax.swing.JMenuItem" name="tentang">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                   <Image iconType="2" name="C:\Users\user\Downloads\aiueo1.png"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Tentang"/>
               </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="tentangActionPerformed"/>
+              </Events>
             </MenuItem>
           </SubComponents>
         </Menu>
@@ -424,7 +427,7 @@
                 </Component>
                 <Container class="javax.swing.JInternalFrame" name="formlogin">
                   <Properties>
-                    <Property name="title" type="java.lang.String" value="MenuUtama"/>
+                    <Property name="title" type="java.lang.String" value="FormLogin"/>
                     <Property name="visible" type="boolean" value="true"/>
                   </Properties>
 
@@ -573,7 +576,7 @@
                           <StringArray count="3">
                             <StringItem index="0" value="-Pilih Salah Satu-"/>
                             <StringItem index="1" value="Admin"/>
-                            <StringItem index="2" value="petugas"/>
+                            <StringItem index="2" value="Petugas"/>
                           </StringArray>
                         </Property>
                       </Properties>
